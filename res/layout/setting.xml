@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidback"
+    android:padding="0dip"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="250px"
+        android:layout_height="60px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/refresh"
+        android:background="#000000"
+        android:text="返回"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/backButton"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:text="zrfan"
+        android:textColor="#000000"
+        android:textSize="13sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nameEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="用户名："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:layout_below="@+id/nameEdit"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPassword"
+        android:text="19930423"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/password"
+        android:text="密    码："
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    
+    <EditText
+        android:id="@+id/ipEdit"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:text="127.0.0.1:8080"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+        
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/ipEdit"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="服务器："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="确定" />
+    
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_alignTop="@+id/RadioGroup01"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="闹    钟："
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    
+    <RadioGroup  
+    android:id="@+id/RadioGroup01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/ipEdit"
+    android:layout_below="@+id/ipEdit"
+    android:layout_marginTop="8dp">
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ipEdit"
+        android:layout_below="@+id/ipEdit"
+        android:text="1分钟"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+        
+    <RadioButton
+        android:id="@+id/Radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio0"
+        android:layout_below="@+id/radio0"
+        android:text="30分钟"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/Radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Radio1"
+        android:layout_below="@+id/Radio1"
+        android:text="1小时" 
+        android:textColor="#ffffff"
+        android:textSize="13sp"/>
+
+
+
+	</RadioGroup>>
+
+</RelativeLayout>

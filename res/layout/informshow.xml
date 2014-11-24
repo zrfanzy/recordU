@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidback"
+    android:padding="0dip"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="250px"
+        android:layout_height="60px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/refresh"
+        android:background="#000000"
+        android:text="返回"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="37dp"
+        android:src="@drawable/backback" />
+
+    <TextView
+        android:id="@+id/TextViewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="GPS："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/backButton"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TextViewb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewa"
+        android:layout_below="@+id/TextViewa"
+        android:text="温度："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextViewc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewa"
+        android:layout_below="@+id/TextViewb"
+        android:text="WIFI："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextViewd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewa"
+        android:layout_below="@+id/TextViewc"
+        android:text="时间："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextViewe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewa"
+        android:layout_below="@+id/TextViewd"
+        android:text="描述："
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+>
+
+</RelativeLayout>
